@@ -63,7 +63,7 @@ abstract class AbstractMenuModule<T: IMenuModule>(override val moduleName: Strin
             return false
         }
 
-        if (number!! < 0 || number > menu.size + 1){
+        if (number < 0 || number > menu.size + 1){
             println("Введённое число выходит за диапазон списка команд")
             return false
         }
