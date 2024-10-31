@@ -1,3 +1,5 @@
+import Classes.MainMenuModule
+
 fun main() {
     try {
         val mainMenuModule = MainMenuModule("Главный модуль приложения")

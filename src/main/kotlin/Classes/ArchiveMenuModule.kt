@@ -1,3 +1,8 @@
+package Classes
+
+import Abstractions.AbstractMenuModule
+import Utils.input
+
 class ArchiveMenuModule(moduleName: String)
     : AbstractMenuModule<NoteMenuModule>(moduleName, "Список заметок", listOfModules = mutableListOf()) {
         override val funcName = "Создать заметку"

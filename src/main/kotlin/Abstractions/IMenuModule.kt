@@ -1,3 +1,5 @@
+package Abstractions
+
 interface IMenuModule {
     val moduleName:String
 

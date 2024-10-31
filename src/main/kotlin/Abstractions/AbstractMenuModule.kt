@@ -1,5 +1,11 @@
+package Abstractions
+
+import Utils.input
+import Utils.waitAnyInput
+
 abstract class AbstractMenuModule<T: IMenuModule>(override val moduleName: String, private val title: String,
-                                                  protected val listOfModules: MutableList<T>) : IMenuModule {
+                                                  protected val listOfModules: MutableList<T>) :
+    IMenuModule {
     private val menu: MutableMap<Int, IMenuModule> = mutableMapOf()
 
     protected abstract val funcName: String

@@ -1,3 +1,8 @@
+package Classes
+
+import Abstractions.AbstractMenuModule
+import Utils.input
+
 class MainMenuModule (moduleName: String)
     : AbstractMenuModule<ArchiveMenuModule>(moduleName, "Список архивов", listOfModules = mutableListOf()) {
     override val funcName = "Создать архив"
