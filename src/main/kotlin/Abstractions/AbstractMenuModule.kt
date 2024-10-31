@@ -65,12 +65,13 @@ abstract class AbstractMenuModule<T: IMenuModule>(override val moduleName: Strin
 
     private fun checkNumber(number: Int?): Boolean{
             if (number == null){
-            println("Вводимый символ должен быть числом")
+            println("Вводимый символ должен быть числом. Пожалуйста введите число.")
             return false
         }
 
         if (number < 0 || number > menu.size + 1){
-            println("Введённое число выходит за диапазон списка команд")
+            println("Введённое число выходит за диапазон списка команд. Пожалуйста введите число, " +
+                        "соответствующее одному из указанных пунктов.")
             return false
         }
 
